@@ -5,11 +5,11 @@
   - name: i want to install webserver on ubuntu nodes
     apt:
      name: apache2
-     state: present
+     state: absent
 
-  - name: i want to install tree
+  - name: i want to install wget
     apt:
-     name: tree
+     name: wget
      state: present 
 
   - name: i want to start apache2 on ubuntu nodes
