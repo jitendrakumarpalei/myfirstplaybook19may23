@@ -18,4 +18,4 @@
      state: started 
 
   - name: i want to ping all nodes
-     ping      
+    ping:      
