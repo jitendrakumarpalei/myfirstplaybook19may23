@@ -10,4 +10,9 @@
   - name: i want to install wget
     apt:
      name: wget
-     state: present   
+     state: present 
+
+  - name: i want to start apache2 on ubuntu nodes
+    service:
+     name: apache2
+     state: started     
