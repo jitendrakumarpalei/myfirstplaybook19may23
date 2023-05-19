@@ -10,7 +10,7 @@
     apt:
       name: wget
       state: present   
-  - name: i want to install tree
-    apt:
-     name: tree
-     state: present 
+  - name: i want to start apache2
+    service:
+      name: apache2
+      state: service
