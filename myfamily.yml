@@ -1,15 +1,15 @@
 ---
 - hosts: all
-  become: yes
+  becomes: yes
   tasks: 
   - name: i want to install webserber on ubuntu nodes
     apt:
       name: apache2
-      state: present 
+      state: absent
   - name: i want to install wget on ubuntu nodes
     apt:
       name: wget
-      state: present   
+      state: absent   
   - name: i want to start apache2
     service:
       name: apache2
