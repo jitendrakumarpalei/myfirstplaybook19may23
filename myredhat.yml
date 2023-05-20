@@ -1,8 +1,8 @@
 --- 
-hosts: all 
-become: yes
-gather_facts: yes
-tasks: 
+- hosts: all 
+  become: yes
+  gather_facts: yes
+  tasks: 
 - name: i want to install webserver on ubuntu node
   apt:
     name: apache2
