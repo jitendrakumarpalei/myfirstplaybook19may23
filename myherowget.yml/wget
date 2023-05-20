@@ -1,9 +1,0 @@
----
-hosts: all 
-becomwe: yes
-tasks:
-- name: i wnt toinstall apache2
-    apt:
-      name: apache2
-      state: present
-      
