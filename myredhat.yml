@@ -6,7 +6,7 @@
   - name: i want to install webserver on ubuntu nodes
     apt:
       name: apache2
-      state: present
+      state: present 
   when: ansible_os_family_ =="debian"
 - name: i want to start webserver on ubuntu nodes
   service:
