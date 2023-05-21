@@ -7,3 +7,7 @@ tasks:
   apt: 
     name: apache 2
     state: present 
+- name: i want to start webserver on ubuntu nodes
+  service: 
+     name: apache2
+     start: 
