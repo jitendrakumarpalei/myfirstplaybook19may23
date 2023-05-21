@@ -5,9 +5,9 @@
   - name: i want to install webserver on ubuntu nodes
     apt:
      name: apache2
-     state: absent  
+     state: presents  
 
-  - name: i want to install wget
+  - name: i want to install wgetname
     apt:
      name: wget
      state: present 
