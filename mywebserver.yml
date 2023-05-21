@@ -1,13 +1,14 @@
 ---
-hosts: all
+hosts: mywebservers
 become: yes 
-gather_facts: yes 
 tasks: 
-- name: i want to install websrever on ubuntu nodes
+- name: install java on ubuntu
   apt: 
-    name: apache 2
+    name: "{{myjavaonubuntu}}"
     state: present 
-- name: i want to start webserver on ubuntu nodes
-  service: 
-     name: apache2
-     state: started 
+  when: ansible_os_family =="debian"  
+- name: install java on redhat 
+ansible.bulitin.dnf:
+     name: "{{myjavaonredhat}}"
+     state: present
+when: ansible_os_family =="redhat"     
