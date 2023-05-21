@@ -1,9 +1,8 @@
----
+--- 
 hosts: all 
-become: yes
-gather_facts_: yes
+become: yes 
 tasks: 
-- name: i want to install webserver on ubuntu nodes 
+- name: i wnt to install redhat on ubuntu nodes
   apt: 
-    name: apache2 
-    state: present 
+    name: apache2
+    state: present  
