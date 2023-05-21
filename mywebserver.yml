@@ -10,4 +10,4 @@ tasks:
 - name: i want to start webserver on ubuntu nodes
   service: 
      name: apache2
-     start: 
+     state: started 
