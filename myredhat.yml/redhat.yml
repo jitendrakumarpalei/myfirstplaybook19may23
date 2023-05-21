@@ -1,9 +1,0 @@
----
-hosts: all 
-become: yes 
-gather_facts_: yes 
-tasks: 
-- name: i want to install websrever on ubuntu nodes
-  apt: 
-    name: apache2 
-    stste: present 
