@@ -2,4 +2,4 @@
 jitu: apache2
 ashish: httpd
 jituonubuntu: openjdk-8-jdk
-ashishonredhat: java-1.8.0-amazon-corretto-devel
+ashishonredhat: java-1.8.0-amazon-corretto-devel 
