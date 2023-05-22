@@ -1,21 +1,16 @@
----
-- hosts: all
-  become: yes
-  tasks:
-  - name: i want to install webserver on ubuntu nodes
-    apt:
-     name: apache2
-     state: present
-
-  - name: i want to install wgetname
-    apt:
-     name: wget
-     state: present 
-
-  - name: i want to start apache2 on ubuntu nodes
-    service:
-     name: apache2
-     state: started 
-
+--- 
+- hosts: all   
+  tasks: 
   - name: i want to ping all nodes
-    ping:      
+    ping: 
+  - name: i want to install websrever on ubuntu ansible nodes 
+    apt: 
+      name: apache2
+      state: present 
+  - name: i want to install tree on ubuntu ansible nodes 
+    apt: 
+      name: tree 
+      state: present      
+
+
+        
