@@ -10,5 +10,7 @@
 172.31.8.179
 172.31.8.171
 
-
+[webserver:vars]
+jitu= apache2
+ashish= httpd
 
