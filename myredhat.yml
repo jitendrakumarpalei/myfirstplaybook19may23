@@ -1,8 +1,13 @@
 --- 
-hosts: all 
+hosts: mywebservers 
 become: yes 
 tasks: 
-- name: i wnt to install redhat on ubuntu nodes
+- name: i wnt to install webserver on ubuntu nodes
   apt: 
     name: apache2
-    state: present  
+    state: present 
+
+- name: i want to install webserver on redhat nodes
+  ansible.builtin.dnf:
+     name: httpd
+     state: present
