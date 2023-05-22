@@ -10,7 +10,7 @@
 172.31.8.179
 172.31.8.171
 
-[webservers:vars]
-mywebpackonubuntu= apache2
-mywebpackonuredhat= httpd
+[mywebservers:vars]
+jitu= apache2
+ashish= httpd
 
