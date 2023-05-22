@@ -11,6 +11,6 @@
 172.31.8.171
 
 [webservers:vars]
-jitu= apache2
-ashish= httpd
+mywebpackonubuntu= apache2
+mywebpackonuredhat= httpd
 
