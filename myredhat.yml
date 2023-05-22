@@ -4,12 +4,12 @@
   tasks: 
   - name: i wnt to install webserver on ubuntu nodes
     apt: 
-     name: apache2
+     name: "{{mywebpackonubuntu}}"
      state: present
     when: ansible_os_family =="Debian"   
 
   - name: i want to install webserver on redhat nodes
     ansible.builtin.dnf:
-     name: httpd
+     name: "{{mywebpackonredhat}}"
      state: present
     when: ansible_os_family =="RedHat"   
