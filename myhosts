@@ -9,7 +9,5 @@
 [myDBservers]
 172.31.8.179
 172.31.8.171
-[ mywebservers.vars]
-jituonubuntu= apache2
-ashishonredhat= httpd
+
 
