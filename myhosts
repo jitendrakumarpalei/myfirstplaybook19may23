@@ -9,6 +9,7 @@
 [myDBservers]
 172.31.8.179
 172.31.8.171
+[myjavainstall.yml]
 myjavaonubuntu: open-8-jdk
 myjavaonredhat: jaava-1.8.0-amazon-corretto-devel
 
