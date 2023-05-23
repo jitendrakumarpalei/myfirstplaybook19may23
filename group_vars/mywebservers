@@ -1,5 +1,14 @@
 --- 
-jitu: apache2
-ashish: httpd
-jituonubuntu: openjdk-8-jdk
-ashishonredhat: java-1.8.0-amazon-corretto-devel 
+- hosts: all
+  become: yes 
+  gather_facts_: yes 
+  tasks: 
+  - name: i want to install webserver on ubuntu nodes 
+    apt: 
+      name: apache2 
+      state: present 
+  - name: i want to start webserver on ubuntu nodes
+    service: 
+        name: apache2
+        state: started
+            
