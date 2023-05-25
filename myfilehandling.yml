@@ -16,5 +16,11 @@
       src: myindexpage
       dest: /var/www/html/index.html 
   
+  handlers: 
+  - name: restart webserver
+    service: 
+       name: apache2
+       state: restarted 
+  
 
 
