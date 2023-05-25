@@ -17,7 +17,7 @@
       dest: /var/www/html/index.html 
 
   get_url:
-    url: http://example.com/path/file.conf
+    url: http://example.com/path/file 
     dest: /etc/foo.conf
     force_basic_auth: yes 
   
