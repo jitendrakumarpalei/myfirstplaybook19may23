@@ -3,8 +3,9 @@
   become: yes 
   tasks:
   - include: myfile.yml
+  - include: jitufile.yml
   - name: i want to install webserver
     apt: 
       name: apache2 
       state: present 
-      
+
