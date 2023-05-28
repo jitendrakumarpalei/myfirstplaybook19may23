@@ -1,0 +1,7 @@
+---
+- name: creat tomcat user
+  user: 
+     name: tomcat  
+     shell: /bin/tomcat
+     home: /opt/tomcat 
+     state: present 
