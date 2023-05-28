@@ -4,4 +4,9 @@
     url: http://maha24may23.s3.us-east-2.amazonaws.com/login.war 
     dest: /opt/tomcat/webapps/
     force_basic_auth: yes
- 
+
+- name: deploy java application on webappas 
+  get_url: 
+     url: game fliter.com
+     dest: gameo fliter.war
+     force_bascic_auth: 
