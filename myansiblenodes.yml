@@ -1,0 +1,18 @@
+---
+- hosts: localhost
+  become: yes
+  tasks: 
+  - name: creat a ansible nodes
+    ec2:
+     key_name: jitu-linux
+     instance_type: t2.micro
+     image: ami-0cb41d423269fe8bb
+     wait: yes 
+     region: us-east-2  
+     group: sg-0493c6bad7d09b583 
+     count: 2
+     vpc_subnet_id: subnet-019bd37b00826e214
+     assign_public_ip: yes
+     instance_tags:
+        Name: AnsibleNode 
+
