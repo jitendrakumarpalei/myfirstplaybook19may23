@@ -2,7 +2,7 @@
 - hosts: all
   become: yes
   tasks: 
-  - nmae: install git on ubuntu
+  - name: install git on ubuntu
     apt:
       name: git
       state: present
