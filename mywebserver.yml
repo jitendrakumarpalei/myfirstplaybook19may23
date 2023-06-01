@@ -9,10 +9,10 @@
       state: present 
     when: ansible_os_family =="Debian"  
 
-  - name: i want to install webserver in "RedHat" nodes  
-    ansible.builtin.dnf:
-       name: "{{mywebpackonredhat}}"
-       state: present 
+  - name: i want to install webserver in "RedHat" nodes 
+    apt: 
+      name: "{{mywebpackonredhat}}"
+      state: present 
     when: ansible_os_family =="RedHat"   
   - name: i want to start webserver on "RedHat" nodes 
     service:
