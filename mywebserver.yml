@@ -7,7 +7,11 @@
     apt: 
       name: "{{mywebpackonubuntu}}"
       state: present 
-    when: ansible_os_family =="Debian"  
+    when: ansible_os_family =="Debian" 
+  - name: i want to install webserver on ubuntu nodes
+    service:
+       name: "{{mywebpackonubuntu}}"
+       state: started
 
   - name: i want to install webserver in "RedHat" nodes 
     apt: 
