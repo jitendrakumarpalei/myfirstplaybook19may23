@@ -9,3 +9,7 @@
 [mydbserver]
 172.31.21.211
 172.31.21.210
+
+[mywebserver]
+mywebpackonubuntu= apache22222222222222222
+mywebpackonredhat= httpd
