@@ -10,13 +10,17 @@
     when: ansible_os_family =="debian"  
 
   - name: i want to install webserver in "redhat" nodes  
-    yum: 
+    ansible.bulitin.dnf:
        name: httpd
        state: present 
     when: ansible_os_family =="redhat"   
-  - name: i want to start webserver on ubuntu nodes 
+  - name: i want to start webserver on "redhat" nodes 
     service:
-        name: apache2
+        name: httpd
         state: started
-    when: ansible_os_family =="Debian" 
+    when: ansible_os_family =="redhat"
+
+
+#   "redhat" =="Debian"
+#   "Debian" =="Debian"
 
