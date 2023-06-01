@@ -7,20 +7,20 @@
     apt: 
       name: apache2 
       state: present 
-    when: ansible_os_family =="debian"  
+    when: ansible_os_family =="Debian"  
 
-  - name: i want to install webserver in "redhat" nodes  
+  - name: i want to install webserver in "RedHat" nodes  
     ansible.bulitin.dnf:
        name: httpd
        state: present 
-    when: ansible_os_family =="redhat"   
-  - name: i want to start webserver on "redhat" nodes 
+    when: ansible_os_family =="RedHat"   
+  - name: i want to start webserver on "RedHat" nodes 
     service:
         name: httpd
         state: started
-    when: ansible_os_family =="redhat"
+    when: ansible_os_family =="RedHat"
 
 
-#   "redhat" =="Debian"
+#   "Redhat" =="Debian"
 #   "Debian" =="Debian"
 
