@@ -14,7 +14,7 @@
        state: started
 
   - name: i want to install webserver in "RedHat" nodes 
-    apt: 
+    ansible.builtin.dnf:
       name: "{{mywebpackonredhat}}"
       state: present 
     when: ansible_os_family =="RedHat"   
