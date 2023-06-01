@@ -10,7 +10,3 @@
 172.31.21.211
 172.31.21.210
 
-[mywebservers:vars]
-myvar01= abc123
-mywebpackonubuntu= apache2
-mywebpackonredhat= httpd
