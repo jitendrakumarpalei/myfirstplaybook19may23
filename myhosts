@@ -11,5 +11,6 @@
 172.31.21.210
 
 [mywebserver]
+myvar01= abc123
 mywebpackonubuntu= apache2
 mywebpackonredhat= httpd
