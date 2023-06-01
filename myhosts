@@ -1,16 +1,16 @@
-[mywebserver]
+[mywebservers]
 172.31.17.224
 172.31.14.214
 
-[myappserver]
+[myappservers]
 172.30.16.210
 172.31.13.200
 
-[mydbserver]
+[mydbservers]
 172.31.21.211
 172.31.21.210
 
-[mywebserver]
+[mywebservers:vars]
 myvar01= abc123
 mywebpackonubuntu= apache2
 mywebpackonredhat= httpd
