@@ -16,7 +16,7 @@
     when: ansible_os_family =="RedHat"   
   - name: i want to start webserver on "RedHat" nodes 
     service:
-        name: httpd
+        name: "{{mywebpackonredhat}}"
         state: started
     when: ansible_os_family =="RedHat"
 
