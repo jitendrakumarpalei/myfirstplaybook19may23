@@ -1,5 +1,5 @@
 ---
-- hosts: 172.31.8.172 
+- hosts: 172.31.17.224 
   become: yes  
   tasks: 
   - name: i want to install direct linux command 
