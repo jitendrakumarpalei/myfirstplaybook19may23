@@ -1,6 +1,6 @@
 --- 
 - hosts: 172.31.17.224
-  become: yes 
+  become: yes
   vars: 
     myvar01: git 
     myvar02: tree
